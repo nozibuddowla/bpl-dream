@@ -1,0 +1,192 @@
+[
+    {
+        "player-image": "https://i.ibb.co.com/x8jkHMYc/3165811.webp",
+        "player-name": "Shakib Al Hasan",
+        "player-country": "Bangladesh",
+        "playing-role": "All-Rounder",
+        "rating": 9.5,
+        "batting-style": "Left-handed",
+        "bowling-style": "Left-arm orthodox",
+        "price": "$115,000"
+    },
+    {
+        "player-image": "https://i.ibb.co.com/BHJRgwcS/385792-1.webp",
+        "player-name": "Tamim Iqbal",
+        "player-country": "Bangladesh",
+        "playing-role": "Batter",
+        "rating": 8.8,
+        "batting-style": "Left-handed",
+        "bowling-style": "Right-arm medium",
+        "price": "$900,000"
+    },
+    {
+        "player-image": "https://i.ibb.co.com/qFr54t95/319734-3.webp",
+        "player-name": "Mustafizur Rahman",
+        "player-country": "Bangladesh",
+        "playing-role": "Bowler",
+        "rating": 8.9,
+        "batting-style": "Right-handed",
+        "bowling-style": "Left-arm fast-medium",
+        "price": "$100,000"
+    },
+    {
+        "player-image": "https://i.ibb.co.com/9JdNjvG/319727-1.webp",
+        "player-name": "Liton Das",
+        "player-country": "Bangladesh",
+        "playing-role": "Wicket-keeper Batter",
+        "rating": 8.4,
+        "batting-style": "Right-handed",
+        "bowling-style": "—",
+        "price": "$780,000"
+    },
+    {
+        "player-image": "https://i.ibb.co.com/XrJXGdsg/405306-2.webp",
+        "player-name": "Andre Russell",
+        "player-country": "West Indies",
+        "playing-role": "All-Rounder",
+        "rating": 9.3,
+        "batting-style": "Right-handed",
+        "bowling-style": "Right-arm fast",
+        "price": "$120,000"
+    },
+    {
+        "player-image": "https://i.ibb.co.com/XfC4w7vc/382810-1.webp",
+        "player-name": "Mahmudullah Riyad",
+        "player-country": "Bangladesh",
+        "playing-role": "All-Rounder",
+        "rating": 8.2,
+        "batting-style": "Right-handed",
+        "bowling-style": "Right-arm off-break",
+        "price": "$700,000"
+    },
+    {
+        "player-image": "https://i.ibb.co.com/mV4dmMmV/320458-1.webp",
+        "player-name": "Mohammad Rizwan",
+        "player-country": "Pakistan",
+        "playing-role": "Wicket-keeper Batter",
+        "rating": 9.0,
+        "batting-style": "Right-handed",
+        "bowling-style": "—",
+        "price": "$105,000"
+    },
+    {
+        "player-image": "https://i.ibb.co.com/Lhxw2xyv/321976-1.webp",
+        "player-name": "Andre Fletcher",
+        "player-country": "West Indies",
+        "playing-role": "Batter",
+        "rating": 8.1,
+        "batting-style": "Right-handed",
+        "bowling-style": "Right-arm off-break",
+        "price": "$820,000"
+    },
+    {
+        "player-image": "https://i.ibb.co.com/MDFTf3CM/316633-1.webp",
+        "player-name": "Nasir Hossain",
+        "player-country": "Bangladesh",
+        "playing-role": "All-Rounder",
+        "rating": 7.9,
+        "batting-style": "Right-handed",
+        "bowling-style": "Right-arm off-break",
+        "price": "$620,000"
+    },
+    {
+        "player-image": "https://i.ibb.co.com/5X3phjkq/323003-1.webp",
+        "player-name": "Dawid Malan",
+        "player-country": "England",
+        "playing-role": "Batter",
+        "rating": 8.7,
+        "batting-style": "Left-handed",
+        "bowling-style": "Right-arm leg-break",
+        "price": "$930,000"
+    },
+    {
+        "player-image": "https://i.ibb.co.com/YFY8Bpn7/shoriful-islam.webp",
+        "player-name": "Shoriful Islam",
+        "player-country": "Bangladesh",
+        "playing-role": "Bowler",
+        "rating": 8.0,
+        "batting-style": "Left-handed",
+        "bowling-style": "Left-arm fast-medium",
+        "price": "$680,000"
+    },
+    {
+        "player-image": "https://i.ibb.co.com/ZpJH2PC0/kyle-mayers.webp",
+        "player-name": "Kyle Mayers",
+        "player-country": "West Indies",
+        "playing-role": "All-Rounder",
+        "rating": 8.6,
+        "batting-style": "Left-handed",
+        "bowling-style": "Right-arm medium-fast",
+        "price": "$880,000"
+    },
+    {
+        "player-image": "https://i.ibb.co.com/vvcSPnmD/316494-1.webp",
+        "player-name": "Chris Gayle",
+        "player-country": "West Indies",
+        "playing-role": "Batsman",
+        "rating": 9.1,
+        "batting-style": "Left-handed",
+        "bowling-style": "Right-arm off-break",
+        "price": "$490,000"
+    },
+    {
+        "player-image": "https://i.ibb.co.com/kgSrq3r7/316529-1.webp",
+        "player-name": "Mashrafe Mortaza",
+        "player-country": "Bangladesh",
+        "playing-role": "Bowler",
+        "rating": 8.1,
+        "bating-style": "Right-handed",
+        "bowling-style": "Right-arm medium-fast",
+        "price": "$350,000"
+    },
+    {
+        "player-image": "https://i.ibb.co.com/k2VS6zJR/385790-1.webp",
+        "player-name": "Mushfiqur Rahim",
+        "player-country": "Bangladesh",
+        "playing-role": "Wicketkeeper-Batsman",
+        "rating": 8.8,
+        "bating-style": "Right-handed",
+        "bowling-style": "N/A",
+        "price": "$430,000"
+    },
+    {
+        "player-image": "https://i.ibb.co.com/Pb2qB3F/320107-1.webp",
+        "player-name": "Kieron Pollard",
+        "player-country": "West Indies",
+        "playing-role": "All-rounder",
+        "rating": 8.6,
+        "bating-style": "Right-handed",
+        "bowling-style": "Right-arm medium-fast",
+        "price": "$460,000"
+    },
+    {
+        "player-image": "https://i.ibb.co.com/990Cf7mw/383228-1.webp",
+        "player-name": "Rashid Khan",
+        "player-country": "Afghanistan",
+        "playing-role": "All-rounder",
+        "rating": 9.6,
+        "bating-style": "Right-handed",
+        "bowling-style": "Right-arm leg-break",
+        "price": "$600,000"
+    },
+    {
+        "player-image": "https://i.ibb.co.com/4gC9N75P/316703-1.webp",
+        "player-name": "Taskin Ahmed",
+        "player-country": "Bangladesh",
+        "playing-role": "Bowler",
+        "rating": 8.5,
+        "bating-style": "Left-handed",
+        "bowling-style": "Right-arm fast",
+        "price": "$380,000"
+    },
+    {
+        "player-image": "https://i.ibb.co.com/bj0bDFpX/380237-1.webp",
+        "player-name": "Mahedi Hasan",
+        "player-country": "Bangladesh",
+        "playing-role": "All-rounder",
+        "rating": 8.3,
+        "bating-style": "Right-handed",
+        "bowling-style": "Right-arm off-break",
+        "price": "$310,000"
+    }
+]
