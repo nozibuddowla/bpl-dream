@@ -1,11 +1,10 @@
 import React from 'react'
 
-const ViewToggle = ({ value = true, onChange = () => {} }) => {
+const ViewToggle = ({ value = true, onChange = () => {}, boughtPlayers }) => {
     return (
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0 mb-4 md:mb-8 sora-normal">
-
+        <div className="max-w-[1320px] mx-auto flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0 mb-4 md:mb-8 p-4 sora-normal">
             <h2 className='text-[#131313] text-3xl font-bold'>
-                {value === true ? "Available" : "Selected"} Players
+                {value === true ? "Available Players" : `Selected Players (${boughtPlayers.length}/6)`}  
             </h2>
 
             <div className='join' role='tablist' aria-label='View toggle' >
@@ -28,7 +27,7 @@ const ViewToggle = ({ value = true, onChange = () => {} }) => {
                 ${value === false 
                 ? "bg-[#e7fe29] text-[#131313] hover:bg-yellow-500 font-bold" 
                 : "text-[#13131399]"} `}>
-                    Selected <span>(0)</span>
+                    Selected <span>({boughtPlayers.length})</span>
                 </button>
             </div>
         </div>

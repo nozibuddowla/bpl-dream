@@ -19,6 +19,13 @@ const PlayerPromise = fetchPlayersData();
 function App() {
   const [toggle, setToggle] = useState(true);
   const [availableBalance, setAvailableBalance] = useState(600000000);
+  const [boughtPlayers, setBoughtPlayers] = useState([]);
+  
+  const removePlayer = (p) => {
+    const filterData = boughtPlayers.filter(athlete => athlete.name !== p.name);
+    setBoughtPlayers(filterData);
+    setAvailableBalance(availableBalance + p.price)
+  }
 
   return (
     <>
@@ -26,15 +33,18 @@ function App() {
 
       <Hero />
 
-      <ViewToggle value={toggle} onChange={setToggle} />
+      <ViewToggle value={toggle} onChange={setToggle} boughtPlayers={boughtPlayers} />
 
       {
         toggle === true 
-        ? <Suspense fallback={<Loading />}>
-            <AvailablePlayers availableBalance={availableBalance} setAvailableBalance={setAvailableBalance} PlayerPromise={PlayerPromise} />
-          </Suspense> 
-        : <SelectedPlayers />
+          ? <Suspense fallback={<Loading />}>
+              <AvailablePlayers PlayerPromise={PlayerPromise} availableBalance={availableBalance} setAvailableBalance={setAvailableBalance} boughtPlayers={boughtPlayers} setBoughtPlayers={setBoughtPlayers} />
+            </Suspense> 
+          : <SelectedPlayers boughtPlayers={boughtPlayers} removePlayer={removePlayer} />
       }
+      
+
+      
       
     </>
   )
