@@ -1,4 +1,5 @@
 import React, { use } from 'react'
+import Player from '../Player/Player';
 
 const AvailablePlayers = ({PlayerPromise}) => {
 
@@ -7,7 +8,11 @@ const AvailablePlayers = ({PlayerPromise}) => {
     console.log(playerData);
     
     return (
-        <div>AvailablePlayers</div>
+        <div className='max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
+            {
+                playerData.map((player, id) => <Player key={id} player={player} />)
+            }
+        </div>
     )
 }
 

@@ -8,7 +8,7 @@ const Header = () => {
             <div className="navbar-start">
             <div className="dropdown">
                 <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
                 </div>
                 <ul
                 tabIndex="-1"
@@ -23,22 +23,20 @@ const Header = () => {
                 <img src={navImg} alt="" />
             </a>
             </div>
-            <div className="navbar-center hidden lg:flex">
-            
-            </div>
+
             <div className="navbar-end sora-normal">
-            <ul className="menu menu-horizontal text-[#131313b3] px-1">
-                <li><a>Home</a></li>
-                <li><a>Fixture</a></li>
-                <li><a>Teams</a></li>
-                <li><a>Schedules</a></li>
-            </ul>
-            <a className="btn px-5 py-4">
-                <span className='font-semibold text-[#131313] mr-1'>0 Coin</span>
-                <span className='mr-1'>
-                <img src={dollarImg} alt="" />
-                </span>
-            </a>
+                <ul className="menu menu-horizontal text-[#131313b3] px-1 hidden lg:flex">
+                    <li><a>Home</a></li>
+                    <li><a>Fixture</a></li>
+                    <li><a>Teams</a></li>
+                    <li><a>Schedules</a></li>
+                </ul>
+                <a className="btn px-5 py-4">
+                    <span className='font-semibold text-[#131313] mr-1'>0 Coin</span>
+                    <span className='mr-1'>
+                    <img src={dollarImg} alt="" />
+                    </span>
+                </a>
             </div>
         </div>
     )
