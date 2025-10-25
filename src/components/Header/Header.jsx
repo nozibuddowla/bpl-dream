@@ -2,11 +2,15 @@ import React from 'react'
 import navImg from '../../assets/logo.png';
 import dollarImg from '../../assets/dollar.png';
 
-const Header = () => {
+const Header = ({availableBalance}) => {
+    const formatted = typeof availableBalance === "number" 
+        ? availableBalance.toLocaleString()
+        : (Number(String(availableBalance).replace(/[^0-9.-]+/g,"")) || 0).toLocaleString();
+
     return (
         <div className="navbar max-w-7xl mx-auto">
             <div className="navbar-start">
-            <div className="dropdown">
+            <div className="dropdown z-20">
                 <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
                 </div>
@@ -32,7 +36,7 @@ const Header = () => {
                     <li><a>Schedules</a></li>
                 </ul>
                 <a className="btn px-5 py-4">
-                    <span className='font-semibold text-[#131313] mr-1'>0 Coin</span>
+                    <span className='font-semibold text-[#131313] mr-1'>${formatted} USD</span>
                     <span className='mr-1'>
                     <img src={dollarImg} alt="" />
                     </span>

@@ -8,18 +8,21 @@ import Hero from './components/Hero/Hero'
 import Loading from './components/Loading/Loading'
 import ViewToggle from './components/ViewToggle/ViewToggle'
 
+
 const fetchPlayersData = async () => {
   const response = await fetch("/players.json");
   return response.json();
 }
 
+const PlayerPromise = fetchPlayersData();
+
 function App() {
   const [toggle, setToggle] = useState(true);
-  const PlayerPromise = fetchPlayersData();
+  const [availableBalance, setAvailableBalance] = useState(600000000);
 
   return (
     <>
-      <Header />
+      <Header availableBalance={availableBalance} />
 
       <Hero />
 
@@ -28,7 +31,7 @@ function App() {
       {
         toggle === true 
         ? <Suspense fallback={<Loading />}>
-            <AvailablePlayers PlayerPromise={PlayerPromise} />
+            <AvailablePlayers availableBalance={availableBalance} setAvailableBalance={setAvailableBalance} PlayerPromise={PlayerPromise} />
           </Suspense> 
         : <SelectedPlayers />
       }

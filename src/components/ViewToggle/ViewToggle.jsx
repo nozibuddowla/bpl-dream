@@ -2,7 +2,7 @@ import React from 'react'
 
 const ViewToggle = ({ value = true, onChange = () => {} }) => {
     return (
-        <div className="max-w-7xl mx-auto flex justify-between items-center mb-8 sora-normal">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0 mb-4 md:mb-8 sora-normal">
 
             <h2 className='text-[#131313] text-3xl font-bold'>
                 {value === true ? "Available" : "Selected"} Players
