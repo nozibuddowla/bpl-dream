@@ -1,10 +1,12 @@
 
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 import './App.css'
 import AvailablePlayers from './components/AvailablePlayers/AvailablePlayers'
 import Header from './components/Header/Header'
 import SelectedPlayers from './components/SelectedPlayers/SelectedPlayers'
 import Hero from './components/Hero/Hero'
+import Loading from './components/Loading/Loading'
+import ViewToggle from './components/ViewToggle/ViewToggle'
 
 const fetchPlayersData = async () => {
   const response = await fetch("/players.json");
@@ -12,7 +14,7 @@ const fetchPlayersData = async () => {
 }
 
 function App() {
-
+  const [toggle, setToggle] = useState(true);
   const PlayerPromise = fetchPlayersData();
 
   return (
@@ -21,14 +23,16 @@ function App() {
 
       <Hero />
 
-      <Suspense fallback={<div className='fixed top-0 left-0 w-screen h-screen flex justify-center items-center z-50 bg-[#ffffffcc]'>
-        <div className="loading loading-infinity loading-xl"/>
-      </div>}>
-        <AvailablePlayers PlayerPromise={PlayerPromise} />
-      </Suspense>
+      <ViewToggle value={toggle} onChange={setToggle} />
 
-      <SelectedPlayers />
-
+      {
+        toggle === true 
+        ? <Suspense fallback={<Loading />}>
+            <AvailablePlayers PlayerPromise={PlayerPromise} />
+          </Suspense> 
+        : <SelectedPlayers />
+      }
+      
     </>
   )
 }

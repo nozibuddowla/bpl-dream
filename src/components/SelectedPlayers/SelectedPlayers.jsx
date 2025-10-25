@@ -2,7 +2,7 @@ import React from 'react'
 
 const SelectedPlayers = () => {
     return (
-        <div>SelectedPlayers</div>
+        <div className='max-w-7xl mx-auto flex justify-center items-center'>SelectedPlayers</div>
     )
 }
 
