@@ -1,13 +1,13 @@
 import { faTrashCan } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
+import { toast } from 'react-toastify';
 
 const SelectPlayer = ({player, removePlayer}) => {
     const {img, name, role} = player;
 
     const handleRemove = () => {
         removePlayer(player);
-        
+        toast(` ${name} removed from the squad`);
     }
 
     return (

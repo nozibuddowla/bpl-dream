@@ -1,6 +1,7 @@
 import { Rating } from '@fluentui/react-rating';
 import { faFlag, faUser } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { toast } from 'react-toastify';
 
 const Player = ({player, availableBalance, setAvailableBalance, boughtPlayers, setBoughtPlayers}) => {
 
@@ -13,7 +14,14 @@ const Player = ({player, availableBalance, setAvailableBalance, boughtPlayers, s
     const isSelected = boughtPlayers.find(p => p.id === player.id);
 
     const handleChoosePlayer = (playerData) => {
-        if(!canAfford || isSelected) return;
+        if(!canAfford || isSelected) {
+            toast("Not enough coins!")
+            return;
+        }
+        if (boughtPlayers.length === 6) {
+            toast("6 players is already selected!");
+            return;
+        }
         setAvailableBalance(prev => Math.max(0, prev - price));
         setBoughtPlayers([...boughtPlayers, playerData]);
     }
@@ -66,7 +74,7 @@ const Player = ({player, availableBalance, setAvailableBalance, boughtPlayers, s
 
                             <button 
                                 onClick={() => handleChoosePlayer(player)} 
-                                disabled={isSelected === true || !canAfford} 
+                                disabled={(isSelected === true) || !canAfford || (boughtPlayers.length === 6)} 
                                 className={`btn btn-outline px-2.5 py-4 sora-normal cursor-pointer text-[#13131380] rounded-lg 
                                 ${isSelected 
                                     ? "bg-[#e7fe29] border-[#e7fe29] btn-soft" 
