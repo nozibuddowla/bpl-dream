@@ -3,7 +3,7 @@ import '../../index.css'
 
 const Newsletter = () => {
     return (
-        <div className="bg-[#06091A] py-6 sm:py-8 lg:py-10 px-4 sm:px-6 lg:px-8">
+        <div className="bg-[#06091A] py-20 px-4 sm:px-6 lg:px-8">
             <div className="relative max-w-[1340px] w-full mx-auto rounded-3xl outline outline-[#ffffff] outline-offset-8 -translate-y-36">
                 <div className="relative bg-white/90 backdrop-blur-xl rounded-3xl border border-white/40 p-10 sm:p-14 md:p-20 lg:p-24 overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-r from-cyan-100 via-transparent to-yellow-100 opacity-60 z-0"></div>

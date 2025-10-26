@@ -2,13 +2,13 @@ import SelectPlayer from '../SelectPlayer/SelectPlayer';
 
 const SelectedPlayers = ({boughtPlayers, removePlayer, value = true, onChange = () => {}}) => {
     return (
-        <div className='max-w-7xl mx-auto flex flex-col gap-4'>
+        <div className='max-w-7xl mx-auto flex flex-col gap-4 mb-28'>
             {
                 boughtPlayers.map( player => 
                     <SelectPlayer key={player.id} player={player} removePlayer={removePlayer} className='card lg:card-side bg-base-100 shadow-sm lex justify-between items-center p-6' />
                 )
             }
-            <div className='mt-12 mb-28'>
+            <div className='mt-12'>
                 <button 
                     role='tab' 
                     aria-pressed={value === true} 
