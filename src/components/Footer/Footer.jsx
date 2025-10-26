@@ -1,6 +1,9 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logoFooter from '../../assets/logo-footer.png';
+import { faCircle } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
+    const year = new Date().getFullYear();
     return (
         <footer className="bg-[#06091A] text-neutral-content py-10">
         <div className="flex justify-center mb-10">
@@ -8,29 +11,33 @@ const Footer = () => {
         </div>
         <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-            <h5 className="font-bold text-lg text-white">About Us</h5>
-            <p className="mt-2 text-gray-400">
-                We are a passionate team dedicated to providing the best services to
-                our customers.
-            </p>
+                <h5 className="font-bold text-lg text-white">About Us</h5>
+                <p className="mt-2 text-gray-400">
+                    We are a passionate team dedicated to providing the best services to
+                    our customers.
+                </p>
             </div>
 
             <div>
-            <h5 className="font-bold text-lg text-white">Quick Links</h5>
-            <ul className="mt-2">
-                <li className="text-gray-400 hover:text-yellow-500">
-                <a href="#">Home</a>
-                </li>
-                <li className="text-gray-400 hover:text-yellow-500">
-                <a href="#">Services</a>
-                </li>
-                <li className="text-gray-400 hover:text-yellow-500">
-                <a href="#">About</a>
-                </li>
-                <li className="text-gray-400 hover:text-yellow-500">
-                <a href="#">Contact</a>
-                </li>
-            </ul>
+                <h5 className="font-bold text-lg text-white">Quick Links</h5>
+                <ul className="mt-2">
+                    <li className="text-gray-400 hover:text-yellow-500">
+                        <FontAwesomeIcon icon={faCircle} size='xs' />
+                        <a href="#" className='text-xl'>  Home</a>
+                    </li>
+                    <li className="text-gray-400 hover:text-yellow-500">
+                        <FontAwesomeIcon icon={faCircle} size='xs' />
+                        <a href="#" className='text-xl'> Fixture</a>
+                    </li>
+                    <li className="text-gray-400 hover:text-yellow-500">
+                        <FontAwesomeIcon icon={faCircle} size='xs'  /> 
+                        <a href="#" className='text-xl'> Team</a>
+                    </li>
+                    <li className="text-gray-400 hover:text-yellow-500">
+                        <FontAwesomeIcon icon={faCircle} size='xs'  /> 
+                        <a href="#" className='text-xl'>  Schedule</a>
+                    </li>
+                </ul>
             </div>
 
             <div>
@@ -51,7 +58,7 @@ const Footer = () => {
         </div>
         <div className="divider"></div>
         <div className="text-center text-gray-400">
-            <p>©2024 Ab Nahid All Rights Reserved.</p>
+            <p> &copy; {year}  All Rights Reserved.</p>
         </div>
         </footer>
     )

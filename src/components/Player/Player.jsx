@@ -19,11 +19,13 @@ const Player = ({player, availableBalance, setAvailableBalance, boughtPlayers, s
             return;
         }
         if (boughtPlayers.length === 6) {
-            toast("6 players is already selected!");
+            toast("Already 6 players are selected!");
             return;
         }
         setAvailableBalance(prev => Math.max(0, prev - price));
         setBoughtPlayers([...boughtPlayers, playerData]);
+
+        toast(`${name} is selected!`)
     }
 
     return (
@@ -74,7 +76,7 @@ const Player = ({player, availableBalance, setAvailableBalance, boughtPlayers, s
 
                             <button 
                                 onClick={() => handleChoosePlayer(player)} 
-                                disabled={(isSelected === true) || !canAfford || (boughtPlayers.length === 6)} 
+                                disabled={(isSelected === true) || !canAfford} 
                                 className={`btn btn-outline px-2.5 py-4 sora-normal cursor-pointer text-[#13131380] rounded-lg 
                                 ${isSelected 
                                     ? "bg-[#e7fe29] border-[#e7fe29] btn-soft" 

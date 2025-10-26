@@ -3,9 +3,9 @@ import '../../index.css'
 
 const Newsletter = () => {
     return (
-        <div className="bg-[#06091A] py-12 px-4 sm:px-6 lg:px-8">
+        <div className="bg-[#06091A] py-6 sm:py-8 lg:py-10 px-4 sm:px-6 lg:px-8">
             <div className="relative max-w-[1340px] w-full mx-auto rounded-3xl outline outline-[#ffffff] outline-offset-8 -translate-y-36">
-                <div className="relative bg-white/90 backdrop-blur-xl rounded-3xl border border-white/40 shadow-[0_0_40px_rgba(255,255,255,0.15)] p-10 sm:p-14 overflow-hidden">
+                <div className="relative bg-white/90 backdrop-blur-xl rounded-3xl border border-white/40 p-10 sm:p-14 md:p-20 lg:p-24 overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-r from-cyan-100 via-transparent to-yellow-100 opacity-60 z-0"></div>
 
                     <img
@@ -25,7 +25,7 @@ const Newsletter = () => {
 
                             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-6">
                                 <input
-                                className="input input-bordered w-full sm:w-96 rounded-xl px-4 py-3 bg-white/70 backdrop-blur-sm text-[#131313] placeholder:text-[#13131380] focus:outline-none"
+                                className="input input-bordered w-full sm:w-96 px-4 py-3"
                                 placeholder="Enter your email"
                                 type="email"
                                 />
