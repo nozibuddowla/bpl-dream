@@ -5,7 +5,7 @@ A modern, interactive web application for building your dream cricket team with 
 
 ## 🚀 Live Demo
 
-[View Live Demo](#)
+[View Live Demo](https://utter-bpl-dream.surge.sh/)
 
 
 ## 📦 Installation
